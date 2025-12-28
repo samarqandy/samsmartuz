@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SAM Smart Security Service — инженерные IT и системы безопасности в Самарканде</title>
+
+<meta name="description"
+content="SAM Smart Security Service — инженерная компания в Самарканде. Системы видеонаблюдения, контроль доступа, сети, оптоволоконные линии связи, серверы. IT-лаборатория, обучение и сервис с 2018 года.">
+
+<meta name="keywords"
+content="видеонаблюдение Самарканд, система контроля доступа Самарканд, IT инфраструктура Самарканд, оптоволоконные линии связи, серверы Самарканд">
+
+<meta name="geo.region" content="UZ-SM">
+<meta name="geo.placename" content="Samarkand">
+<meta name="geo.position" content="39.6542;66.9597">
+<meta name="ICBM" content="39.6542,66.9597">
+
+<style>
+:root{
+  --dark:#0a1929;
+  --blue:#1a4d8f;
+  --accent:#c8102e;
+  --bg:#f4f6f9;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:#1a1a1a;
+  line-height:1.65;
+}
+
+/* HEADER */
+header{
+  background:var(--dark);
+  color:#fff;
+  padding:18px 24px;
+}
+.header-inner{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.lang button{
+  background:none;
+  border:1px solid #fff;
+  color:#fff;
+  padding:6px 12px;
+  margin-left:6px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,var(--dark),var(--blue));
+  color:#fff;
+  padding:90px 20px;
+  text-align:center;
+}
+.hero h1{font-size:36px;margin-bottom:14px}
+.hero p{font-size:18px;opacity:.95}
+
+/* SECTIONS */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:70px 20px;
+}
+.block{
+  background:#fff;
+  padding:40px;
+  border-radius:12px;
+  margin-bottom:40px;
+}
+
+h2{
+  color:var(--dark);
+  margin-bottom:20px;
+}
+h3{
+  margin-top:25px;
+  color:var(--blue);
+}
+
+/* LISTS */
+ul{padding-left:20px}
+li{margin-bottom:10px}
+
+/* SERVICES */
+.services ul{columns:2}
+
+/* PROCESS */
+.process{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.step{
+  background:#f1f4f8;
+  padding:20px;
+  border-left:4px solid var(--accent);
+}
+
+/* MAP */
+.map-box{
+  width:100%;
+  height:420px;
+  margin-top:20px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#ccc;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+
+.hidden{display:none}
+
+@media(max-width:768px){
+  .services ul{columns:1}
+  .hero h1{font-size:30px}
+}
+</style>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+  });
+}
+</script>
+</head>
+
+<body onload="setLang('ru')">
+
+<header>
+  <div class="header-inner">
+    <strong>SAM Smart Security Service</strong>
+    <div class="lang">
+      <button onclick="setLang('ru')">RU</button>
+      <button onclick="setLang('uz')">UZ</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div data-lang="ru">
+    <h1>Инженерные IT-решения и системы безопасности</h1>
+    <p>
+      Видеонаблюдение • Контроль доступа • Сети • Оптоволоконные линии связи • Серверы<br>
+      Самарканд · Работаем с 2018 года
+    </p>
+  </div>
+  <div data-lang="uz" class="hidden">
+    <h1>Xavfsizlik va IT bo‘yicha muhandislik yechimlari</h1>
+    <p>
+      Videokuzatuv • Kirishni nazorat qilish • Tarmoqlar • Tolali-optik aloqa liniyalari • Serverlar<br>
+      Samarqand · 2018-yildan buyon
+    </p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="block">
+  <div data-lang="ru">
+    <h2>О компании</h2>
+    <p>
+      SAM Smart Security Service — инженерная компания, работающая в Самарканде с 2018 года.
+      Компания специализируется на проектировании, внедрении и сопровождении
+      систем безопасности и IT-инфраструктуры для частных и корпоративных клиентов.
+    </p>
+  </div>
+  <div data-lang="uz" class="hidden">
+    <h2>Kompaniya haqida</h2>
+    <p>
+      SAM Smart Security Service — 2018-yildan buyon Samarqand shahrida faoliyat yurituvchi
+      muhandislik kompaniyasi. Kompaniya xavfsizlik tizimlari va IT-infratuzilmani
+      loyihalash, joriy etish hamda texnik xizmat ko‘rsatishga ixtisoslashgan.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="block services">
+  <div data-lang="ru">
+    <h2>Услуги</h2>
+    <ul>
+      <li>Системы видеонаблюдения</li>
+      <li>Система контроля и управления доступом</li>
+      <li>Сетевые решения (Cisco / MikroTik)</li>
+      <li>Оптоволоконные линии связи</li>
+      <li>Серверы и системы хранения данных</li>
+      <li>Программное обеспечение для видеонаблюдения и контроля доступа</li>
+    </ul>
+  </div>
+  <div data-lang="uz" class="hidden">
+    <h2>Xizmatlar</h2>
+    <ul>
+      <li>Videokuzatuv tizimlari</li>
+      <li>Kirishni nazorat qilish va boshqarish tizimlari</li>
+      <li>Cisco / MikroTik tarmoq yechimlari</li>
+      <li>Tolali-optik aloqa liniyalari</li>
+      <li>Serverlar va ma’lumot saqlash tizimlari</li>
+      <li>Videokuzatuv va kirish nazorati uchun dasturiy ta’minot</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="block">
+  <div data-lang="ru">
+    <h2>Проекты и направления</h2>
+
+    <h3>NETLAB</h3>
+    <p>
+      Профессиональный IT-образовательный и сервисный проект компании.
+      В рамках NETLAB функционирует собственная IT-лаборатория с серверами,
+      сетевым оборудованием и учебными стендами, а также профессиональное IT-сообщество.
+    </p>
+
+    <h3>PARVOZ Code</h3>
+    <p>
+      Образовательный проект для детей 6–14 лет, направленный на развитие
+      инженерного мышления, программирования, робототехники и логики.
+    </p>
+
+    <h3>SAM Smart Security Service</h3>
+    <p>
+      Компания также управляет IT-магазином и реализует клиентские проекты
+      по системам безопасности, сетям, серверной инфраструктуре,
+      оптоволоконным решениям и электронике.
+    </p>
+  </div>
+
+  <div data-lang="uz" class="hidden">
+    <h2>Loyihalar va yo‘nalishlar</h2>
+
+    <h3>NETLAB</h3>
+    <p>
+      Kompaniyaning professional IT-ta’lim va servis loyihasi bo‘lib,
+      serverlar, tarmoq uskunalari va amaliy stendlarga ega
+      IT-laboratoriyani o‘z ichiga oladi hamda IT-hamjamiyatni rivojlantiradi.
+    </p>
+
+    <h3>PARVOZ Code</h3>
+    <p>
+      6–14 yoshli bolalar uchun mo‘ljallangan ta’lim loyihasi bo‘lib,
+      muhandislik fikrlashi, dasturlash va robototexnikani rivojlantiradi.
+    </p>
+
+    <h3>SAM Smart Security Service</h3>
+    <p>
+      Kompaniya IT-magazin faoliyatini yuritadi hamda
+      mijozlar uchun xavfsizlik va IT sohasida individual loyihalarni amalga oshiradi.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="block">
+  <div data-lang="ru">
+    <h2>Как мы работаем</h2>
+    <div class="process">
+      <div class="step">Анализ и консультация</div>
+      <div class="step">Проектирование решения</div>
+      <div class="step">Внедрение и настройка</div>
+      <div class="step">Сервис и сопровождение</div>
+    </div>
+  </div>
+  <div data-lang="uz" class="hidden">
+    <h2>Ish jarayoni</h2>
+    <div class="process">
+      <div class="step">Tahlil va maslahat</div>
+      <div class="step">Yechimni loyihalash</div>
+      <div class="step">Joriy etish va sozlash</div>
+      <div class="step">Servis va qo‘llab-quvvatlash</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block">
+  <div data-lang="ru">
+    <h2>Контакты</h2>
+    <p>📍 Самарканд, ул. Дахбед, 11</p>
+    <p>📞 +998 93 680 31 13</p>
+    <p>✉️ samsmartuz@gmail.com</p>
+
+    <div class="map-box">
+      <iframe
+        src="https://yandex.uz/map-widget/v1/?ll=66.968674%2C39.673920&z=17&text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%2C%20%D0%94%D0%B0%D0%B3%D0%B1%D0%B8%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2011"
+        width="100%" height="100%" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div data-lang="uz" class="hidden">
+    <h2>Aloqa</h2>
+    <p>📍 Samarqand shahri, Dahbed ko‘chasi 11-uy</p>
+    <p>📞 +998 93 680 31 13</p>
+    <p>✉️ samsmartuz@gmail.com</p>
+
+    <div class="map-box">
+      <iframe
+        src="https://yandex.uz/map-widget/v1/?ll=66.968674%2C39.673920&z=17&text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%2C%20%D0%94%D0%B0%D0%B3%D0%B1%D0%B8%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2011"
+        width="100%" height="100%" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2018–2025 SAM Smart Security Service · Samarkand
+</footer>
+
+</body>
+</html>
