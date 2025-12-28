@@ -4,146 +4,113 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SAM Smart Security Service — IT va xavfsizlik tizimlari | Samarqand</title>
+<title>SAM Smart Security Service — IT и системы безопасности | Самарканд</title>
 
 <meta name="description"
-content="SAM Smart Security Service — Samarqandda IT va xavfsizlik tizimlari. Videokuzatuv, kirishni nazorat qilish, tarmoqlar, tolali-optik aloqa, serverlar. 2018-yildan buyon.">
+content="SAM Smart Security Service — IT и системы безопасности в Самарканде. Видеонаблюдение, СКУД, сети Cisco/MikroTik, оптоволокно, серверы. С 2018 года.">
 
 <meta name="keywords"
-content="videokuzatuv Samarqand, SKUD Samarqand, IT infratuzilma, tolali optik aloqa, serverlar Samarqand">
+content="видеонаблюдение Самарканд, СКУД Самарканд, IT услуги, оптоволокно, серверы Самарканд">
 
 <meta name="geo.region" content="UZ-SM">
 <meta name="geo.placename" content="Samarkand">
 <meta name="geo.position" content="39.673920;66.968674">
 <meta name="ICBM" content="39.673920,66.968674">
 
+<link rel="icon" href="assets/favicon.png" type="image/png">
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QND5KPSG4G"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config','G-QND5KPSG4G');
+</script>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "name":"SAM Smart Security Service",
+ "url":"https://samsmart.uz",
+ "telephone":["+998936803113","+998972344442"],
+ "address":{
+   "@type":"PostalAddress",
+   "streetAddress":"Dagbitskaya ko'chasi 11, 1-qavat",
+   "addressLocality":"Samarqand",
+   "addressCountry":"UZ"
+ },
+ "geo":{
+   "@type":"GeoCoordinates",
+   "latitude":39.673920,
+   "longitude":66.968674
+ }
+}
+</script>
+
 <style>
-:root{
-  --dark:#0a1929;
-  --blue:#1a4d8f;
-  --accent:#c8102e;
-  --bg:#f4f6f9;
-}
-
+:root{--dark:#0a1929;--blue:#1a4d8f;--bg:#f4f6f9}
 *{margin:0;padding:0;box-sizing:border-box}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--bg);
-  color:#1a1a1a;
-  line-height:1.65;
-}
-
-/* HEADER */
-header{
-  background:var(--dark);
-  color:#fff;
-  padding:14px 24px;
-}
-.header-inner{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.logo img{
-  height:45px;
-}
-.logo span{
-  font-weight:bold;
-  font-size:18px;
-}
-.lang button{
-  background:none;
-  border:1px solid #fff;
-  color:#fff;
-  padding:6px 12px;
-  margin-left:6px;
-  cursor:pointer;
-}
-
-/* HERO */
-.hero{
-  background:linear-gradient(135deg,var(--dark),var(--blue));
-  color:#fff;
-  padding:90px 20px;
-  text-align:center;
-}
-.hero h1{font-size:36px;margin-bottom:14px}
-.hero p{font-size:18px;opacity:.95}
-
-/* SECTIONS */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:70px 20px;
-}
-.block{
-  background:#fff;
-  padding:40px;
-  border-radius:12px;
-  margin-bottom:40px;
-}
-
-h2{color:var(--dark);margin-bottom:20px}
-h3{margin-top:25px;color:var(--blue)}
-
-ul{padding-left:20px}
-li{margin-bottom:10px}
-
-/* SERVICES */
-.services ul{columns:2}
-
-/* PROCESS */
-.process{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-.step{
-  background:#f1f4f8;
-  padding:20px;
-  border-left:4px solid var(--accent);
-}
-
-/* MAP */
-.map-box{
-  width:100%;
-  height:420px;
-  margin-top:20px;
-  border-radius:10px;
-  overflow:hidden;
-}
-
-/* FOOTER */
-footer{
-  background:var(--dark);
-  color:#ccc;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-}
-
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1a1a1a}
 .hidden{display:none}
 
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:var(--dark);padding:12px 24px}
+.header-inner{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo img{height:45px}
+nav ul{list-style:none;display:flex;gap:20px}
+nav a{color:#fff;text-decoration:none}
+.lang button{background:none;border:1px solid #fff;color:#fff;padding:5px 10px;margin-left:6px;cursor:pointer}
+.menu-btn{display:none;color:#fff;font-size:26px;cursor:pointer}
+.mobile-menu{display:none;background:var(--dark);padding:20px}
+.mobile-menu a{display:block;color:#fff;text-decoration:none;margin-bottom:15px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--dark),var(--blue));color:#fff;text-align:center;padding:90px 20px}
+.hero h1{font-size:36px}
+.hero p{font-size:18px;margin-top:10px}
+
+/* SECTIONS */
+section{max-width:1200px;margin:auto;padding:70px 20px}
+.block{background:#fff;border-radius:12px;padding:40px;margin-bottom:40px}
+h2{color:var(--dark);margin-bottom:20px}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.card h4{margin:10px 0;color:var(--blue)}
+
+/* FORM */
+form{max-width:520px;margin-top:20px}
+form input,form textarea{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ccc;border-radius:6px}
+form button{background:var(--blue);color:#fff;border:none;padding:12px 24px;border-radius:6px}
+
+/* MAP */
+.map-box{width:100%;height:420px;margin-top:20px;border-radius:10px;overflow:hidden}
+
+/* TELEGRAM */
+.tg-float{position:fixed;bottom:20px;right:20px;background:#0088cc;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:2000}
+
+/* FOOTER */
+footer{background:var(--dark);color:#ccc;text-align:center;padding:25px;font-size:14px}
+
 @media(max-width:768px){
-  .services ul{columns:1}
-  .hero h1{font-size:30px}
-  .logo span{display:none}
+ nav{display:none}
+ .menu-btn{display:block}
 }
 </style>
 
 <script>
 function setLang(lang){
-  document.querySelectorAll('[data-lang]').forEach(el=>{
-    el.style.display = el.dataset.lang === lang ? 'block':'none';
-  });
+ document.querySelectorAll('[data-lang]').forEach(el=>{
+   el.style.display = el.dataset.lang===lang?'block':'none';
+ });
+}
+function toggleMenu(){
+ const m=document.getElementById("mobileMenu");
+ m.style.display=m.style.display==="block"?"none":"block";
 }
 </script>
 </head>
@@ -151,136 +118,130 @@ function setLang(lang){
 <body onload="setLang('ru')">
 
 <header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="assets/logo.png" alt="SAM Smart Security Service">
-      <span>SAM Smart Security Service</span>
-    </div>
-    <div class="lang">
-      <button onclick="setLang('ru')">RU</button>
-      <button onclick="setLang('uz')">UZ</button>
-    </div>
-  </div>
+<div class="header-inner">
+<div class="logo"><img src="assets/logo.png" alt="SAM Smart Security Service"></div>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="lang">
+<button onclick="setLang('ru')">RU</button>
+<button onclick="setLang('uz')">UZ</button>
+</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#about" onclick="toggleMenu()">About</a>
+<a href="#services" onclick="toggleMenu()">Services</a>
+<a href="#projects" onclick="toggleMenu()">Projects</a>
+<a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
 </header>
 
 <!-- HERO -->
 <div class="hero">
-  <div data-lang="ru">
-    <h1>Инженерные IT-решения и системы безопасности</h1>
-    <p>
-      Видеонаблюдение • Контроль доступа • Сети • Оптоволоконные линии • Серверы<br>
-      Самарканд · Работаем с 2018 года
-    </p>
-  </div>
-  <div data-lang="uz" class="hidden">
-    <h1>Xavfsizlik va IT bo‘yicha muhandislik yechimlari</h1>
-    <p>
-      Videokuzatuv • Kirishni nazorat qilish • Tarmoqlar • Tolali-optik aloqa • Serverlar<br>
-      Samarqand · 2018-yildan buyon
-    </p>
-  </div>
+<div data-lang="ru">
+<h1>Инженерные IT-решения и системы безопасности</h1>
+<p>Самарканд · С 2018 года</p>
+</div>
+<div data-lang="uz" class="hidden">
+<h1>Xavfsizlik va IT bo‘yicha muhandislik yechimlari</h1>
+<p>Samarqand · 2018-yildan buyon</p>
+</div>
 </div>
 
 <!-- ABOUT -->
-<section class="block">
-  <div data-lang="ru">
-    <h2>О компании</h2>
-    <p>
-      SAM Smart Security Service — инженерная kompaniya bo‘lib,
-      2018-yildan buyon Samarqand shahrida faoliyat yuritadi.
-      Biz xavfsizlik tizimlari va IT-infratuzilmani loyihalash,
-      joriy etish va texnik xizmat ko‘rsatishga ixtisoslashganmiz.
-    </p>
-  </div>
-  <div data-lang="uz" class="hidden">
-    <h2>Kompaniya haqida</h2>
-    <p>
-      SAM Smart Security Service — 2018-yildan buyon Samarqand shahrida faoliyat yurituvchi
-      muhandislik kompaniyasi bo‘lib, xavfsizlik va IT-infratuzilma yechimlarini taqdim etadi.
-    </p>
-  </div>
+<section id="about" class="block">
+<div data-lang="ru">
+<h2>О компании</h2>
+<p>SAM Smart Security Service — профессиональная IT и инженерная компания.</p>
+</div>
+<div data-lang="uz" class="hidden">
+<h2>Kompaniya haqida</h2>
+<p>SAM Smart Security Service — IT va xavfsizlik bo‘yicha professional kompaniya.</p>
+</div>
 </section>
 
 <!-- SERVICES -->
-<section class="block services">
-  <div data-lang="ru">
-    <h2>Услуги</h2>
-    <ul>
-      <li>Системы видеонаблюдения</li>
-      <li>Система контроля и управления доступом</li>
-      <li>Сетевые решения (Cisco / MikroTik)</li>
-      <li>Оптоволоконные линии связи</li>
-      <li>Серверы и системы хранения данных</li>
-      <li>Программное обеспечение для систем безопасности</li>
-    </ul>
-  </div>
-  <div data-lang="uz" class="hidden">
-    <h2>Xizmatlar</h2>
-    <ul>
-      <li>Videokuzatuv tizimlari</li>
-      <li>Kirishni nazorat qilish va boshqarish tizimlari</li>
-      <li>Cisco / MikroTik tarmoq yechimlari</li>
-      <li>Tolali-optik aloqa liniyalari</li>
-      <li>Serverlar va ma’lumot saqlash tizimlari</li>
-      <li>Xavfsizlik tizimlari uchun dasturiy ta’minot</li>
-    </ul>
-  </div>
+<section id="services" class="block">
+<div data-lang="ru">
+<h2>Услуги</h2>
+<div class="cards">
+<div class="card">📹 <h4>Видеонаблюдение</h4><p>CCTV системы</p></div>
+<div class="card">🔐 <h4>СКУД</h4><p>Контроль доступа</p></div>
+<div class="card">🌐 <h4>Сети</h4><p>Cisco / MikroTik</p></div>
+<div class="card">🔌 <h4>Оптоволокно</h4><p>FO линии</p></div>
+<div class="card">🖥 <h4>Серверы</h4><p>Хранение данных</p></div>
+</div>
+</div>
+
+<div data-lang="uz" class="hidden">
+<h2>Xizmatlar</h2>
+<div class="cards">
+<div class="card">📹 <h4>Videokuzatuv</h4><p>CCTV tizimlari</p></div>
+<div class="card">🔐 <h4>SKUD</h4><p>Kirish nazorati</p></div>
+<div class="card">🌐 <h4>Tarmoqlar</h4><p>Cisco / MikroTik</p></div>
+<div class="card">🔌 <h4>Tolali-optik aloqa</h4><p>FO liniyalar</p></div>
+<div class="card">🖥 <h4>Serverlar</h4><p>Ma’lumot saqlash</p></div>
+</div>
+</div>
 </section>
 
 <!-- PROJECTS -->
-<section class="block">
-  <div data-lang="ru">
-    <h2>Проекты</h2>
-    <h3>NETLAB</h3>
-    <p>Профессиональная IT-лаборатория и образовательный проект.</p>
-    <h3>PARVOZ Code</h3>
-    <p>Обучение детей 6–14 лет программированию, робототехнике и логике.</p>
-    <h3>SAM Smart Security Service</h3>
-    <p>IT-магазин, сервис и клиентские инженерные проекты.</p>
-  </div>
-  <div data-lang="uz" class="hidden">
-    <h2>Loyihalar</h2>
-    <h3>NETLAB</h3>
-    <p>Professional IT-laboratoriya va ta’lim loyihasi.</p>
-    <h3>PARVOZ Code</h3>
-    <p>6–14 yoshli bolalar uchun IT-ta’lim loyihasi.</p>
-    <h3>SAM Smart Security Service</h3>
-    <p>IT-magazin va mijozlar uchun muhandislik loyihalari.</p>
-  </div>
+<section id="projects" class="block">
+<div data-lang="ru">
+<h2>Проекты</h2>
+<p><strong>NETLAB</strong> — IT лаборатория</p>
+<p><strong>PARVOZ Code</strong> — обучение детей 6–14 лет</p>
+</div>
+<div data-lang="uz" class="hidden">
+<h2>Loyihalar</h2>
+<p><strong>NETLAB</strong> — IT laboratoriya</p>
+<p><strong>PARVOZ Code</strong> — 6–14 yoshli bolalar uchun</p>
+</div>
 </section>
 
 <!-- CONTACT -->
-<section class="block">
-  <div data-lang="ru">
-    <h2>Контакты</h2>
-    <p>📍 Самарканд, ул. Дагбитская, 11, 1 этаж</p>
-    <p>📞 +998 93 680 31 13</p>
+<section id="contact" class="block">
+<div data-lang="ru">
+<h2>Контакты</h2>
+<p>📍 Самарканд, ул. Дагбитская 11</p>
+</div>
+<div data-lang="uz" class="hidden">
+<h2>Aloqa</h2>
+<p>📍 Samarqand, Dagbitskaya ko‘chasi 11</p>
+</div>
 
-    <div class="map-box">
-      <iframe
-        src="https://yandex.uz/map-widget/v1/?ll=66.968674%2C39.673920&z=17&text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%2C%20%D0%94%D0%B0%D0%B3%D0%B1%D0%B8%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB.%2011"
-        width="100%" height="100%" frameborder="0" allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+<p>📞 <a href="tel:+998936803113">+998 93 680 31 13</a></p>
+<p>📞 <a href="tel:+998972344442">+998 97 234 44 42</a></p>
+<p>💬 <a href="https://t.me/samsmartuz">@samsmartuz</a></p>
 
-  <div data-lang="uz" class="hidden">
-    <h2>Aloqa</h2>
-    <p>📍 Samarqand shahri, Dagbitskaya ko‘chasi 11, 1-qavat</p>
-    <p>📞 +998 93 680 31 13</p>
+<form action="https://formspree.io/f/meeqledd" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message" required></textarea>
+<button type="submit">Send</button>
+</form>
 
-    <div class="map-box">
-      <iframe
-        src="https://yandex.uz/map-widget/v1/?ll=66.968674%2C39.673920&z=17&text=Dagbitskaya%2011%2C%20Samarqand"
-        width="100%" height="100%" frameborder="0" allowfullscreen>
-      </iframe>
-    </div>
-  </div>
+<div class="map-box">
+<iframe src="https://www.google.com/maps?q=39.673920,66.968674&z=17&output=embed"
+width="100%" height="100%" style="border:0"></iframe>
+</div>
 </section>
 
 <footer>
 © 2018–2025 SAM Smart Security Service · Samarqand
 </footer>
+
+<a href="https://t.me/samsmartuz" class="tg-float">💬</a>
 
 </body>
 </html>
